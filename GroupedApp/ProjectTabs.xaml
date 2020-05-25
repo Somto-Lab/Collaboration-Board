@@ -1,0 +1,31 @@
+﻿<Window x:Class="GroupedApp.ProjectTabs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GroupedApp"
+        mc:Ignorable="d"
+        Title="Collaboration Board" Height="450" Width="800"
+        WindowStartupLocation="CenterOwner" WindowState="Maximized">
+    <Window.Resources>
+        <ControlTemplate x:Key="TabDateTemplate" TargetType="TabItem">
+            <StackPanel Orientation="Horizontal">
+                <Button>
+                    <Image Source="/Resources/edit.png" Margin="30 0 0 0" Width="20" Height="20"/>
+                </Button>
+            </StackPanel>
+        </ControlTemplate>
+    </Window.Resources>
+    
+    <Grid>
+        <TabControl Name="MainTab"  TabStripPlacement="Top">
+            <TabItem>
+                <TabItem.Template>
+                    <ControlTemplate>
+                        <Button Content="Add Tab" Click="OpenTab"/>
+                    </ControlTemplate>
+                </TabItem.Template>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

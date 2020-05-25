@@ -1,0 +1,22 @@
+﻿<Window x:Class="GroupedApp.StartDate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GroupedApp"
+        mc:Ignorable="d" Height="130" Width="390" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Height="auto" Width="auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="1" Content="Enter Start Date"/>
+        <DatePicker Name="StartDateEntry" Grid.Row="1" Grid.Column="1" SelectedDateFormat="Long"/>
+        <Button Click="Accepted" Grid.Row="2" Grid.ColumnSpan="2" Content="Confirm" Background="DarkBlue" Foreground="LightGray"/>
+    </Grid>
+</Window>

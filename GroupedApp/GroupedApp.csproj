@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Costain.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\cross.png" />
+    <None Remove="Resources\delete.png" />
+    <None Remove="Resources\document.png" />
+    <None Remove="Resources\edit.png" />
+    <None Remove="Resources\save.png" />
+    <None Remove="Resources\stuff.png" />
+    <None Remove="Resources\tick.png" />
+    <None Remove="Resources\undo.png" />
+    <None Remove="Resources\undoCross.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Runtime.WindowsRuntime">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Runtime.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Windows">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd</HintPath>
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\cross.png" />
+    <Resource Include="Resources\delete.png" />
+    <Resource Include="Resources\document.png" />
+    <Resource Include="Resources\edit.png" />
+    <Resource Include="Resources\save.png" />
+    <Resource Include="Resources\stuff.png" />
+    <Resource Include="Resources\tick.png" />
+    <Resource Include="Resources\undo.png" />
+    <Resource Include="Resources\undoCross.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

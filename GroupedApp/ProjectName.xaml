@@ -1,0 +1,20 @@
+﻿<Window x:Class="GroupedApp.ProjectName"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GroupedApp"
+             mc:Ignorable="d" 
+             Height="140" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Label Content="Project Code" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <local:TextBoxRequired Grid.Row="1" Height="50" x:Name="ProjectNameTextBox"/>
+        <Button Grid.Row="3" Background="DarkBlue" Foreground="LightGray" Content="Confirm" Click="Accept"/>
+    </Grid>
+</Window>
