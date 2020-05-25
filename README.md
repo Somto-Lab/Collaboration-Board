@@ -17,6 +17,6 @@ changes mine.
 
 Activities designated as milestones are replicated on a collapsible left side panel.
 
-All data is storedon and retrieved from a MongoDB server. For testing, server address needs to be replaced with IP address to be used.  
+All data is stored on and retrieved from a MongoDB server. For testing, server address needs to be replaced with IP address to be used.  
 
 Suggestions on improvements are welcomed.
